@@ -1,25 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ToDo List App</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/7692/7692809.png" type="image/x-icon">
+  </head>
+  <body>
     <div class="container">
-        <div class="todo-app">
-            <h2>To-Do List <img class="logoicon" src="https://cdn-icons-png.flaticon.com/128/7692/7692809.png" alt="Logo"> </h2>
-            <div class="row">
-                <input type="text" id="input-box" placeholder="Add your text">
-                <button>Add</button>
-            </div>
-            <ul class="list-container">
-                <li class="checked">Task 1</li>
-                <li>Task 2</li>
-                <li>Task 3</li>
-            </ul>
+      <div class="todo-app">
+        <h2>
+          To-Do List
+          <img
+            class="logoicon"
+            src="https://cdn-icons-png.flaticon.com/128/7692/7692809.png"
+            alt="Logo"
+          />
+        </h2>
+        <div class="row">
+          <input type="text" id="input-box" placeholder="Add your text" />
+          <button onclick="addTask()">Add</button>
         </div>
+        <ul class="list-container" id="list-container">
+          <li class="checked">Task 1</li>
+          <li>Task 2</li>
+          <li>Task 3</li>
+        </ul>
+      </div>
     </div>
-</body>
+
+    <script src="./script.js"></script>
+  </body>
 </html>

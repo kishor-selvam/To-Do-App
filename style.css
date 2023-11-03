@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500&family=Poppins:wght@100;200;300;500;700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
 .container{
@@ -90,4 +93,21 @@ ul li.checked{
 
 ul li.checked::before{
     background-image: url(./assets/img/checked.png);
+}
+
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+ul li span:hover{
+ background: #edeef0;
 }
